@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!-- 
+
+// rendr.me "promo channel"
+// last update Thu, 15 Nov 2012 07:47:47 CET
+
+-->
+<smil>
+      <head>
+      <meta http-equiv="Refresh" content="900"/>
+            <layout>
+                  <root-layout width="800" height="480"/>
+            </layout>
+      </head>
+      <body>
+            <excl repeatCount="indefinite">
+                  <seq id="foo" begin="wallclock(R/2000-01-01T00:00:00/P1D)" end="wallclock(R/2020-01-01T23:59:00/P1D)">
+                        <par>
+                              <seq end="__prefetchEnd.endEvent">
+                                    <seq repeatCount="indefinite">
+                                          <img src="evotion_splash_sd.jpg" dur="indefinite" fit="fill" />
+                                    </seq>
+                              </seq> 
+                              <seq>
+                                    <prefetch src="iadea_promo1_sd.mp4"/>
+                                    <prefetch src="evotion_intro_sd.mp4"/>
+                                    <prefetch src="news_sd.mp4"/>
+                                    <prefetch src="evotion_how_sd.mp4"/>
+                                    <prefetch src="weather_sd.mp4"/>
+                                    <prefetch src="iadea_promo2_sd.mp4"/>
+                                    <prefetch src="evotion_extro_sd.mp4"/>
+                                    
+                                    <seq id="__prefetchEnd" dur="1s"/>
+                              </seq>
+                              <seq begin="__prefetchEnd.endEvent" repeatCount="indefinite">
+                                    <video src="iadea_promo1_sd.mp4"/>
+                                    <video src="evotion_intro_sd.mp4"/>
+                                    <video src="news_sd.mp4"/>
+                                    <video src="evotion_how_sd.mp4"/>
+                                    <video src="weather_sd.mp4"/>
+                                    <video src="iadea_promo2_sd.mp4"/>
+                                    <video src="evotion_extro_sd.mp4"/>
+                              </seq>
+                        </par>
+                  </seq>
+                  <ref begin="0;foo.endEvent" src="adapi:blankScreen" dur="indefinite"/>
+            </excl>
+      </body>
+</smil>
+<!-- end of playlist -->
