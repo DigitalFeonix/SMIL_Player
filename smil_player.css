@@ -1,0 +1,22 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: rgb(0,0,0);
+    position: relative;
+    cursor: none;
+}
+
+div {
+    color: white;
+}
+
+div#root {
+    box-shadow: none;
+}
+
+iframe {
+    border: none;
+}

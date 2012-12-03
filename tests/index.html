@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Primary Test</title>
+    <link rel="stylesheet" href="../smil_player.css">
+    <script src="../SMIL_Player.js"></script>
+    <script>
+    
+    var signage;
+    
+    onload = function()
+    {
+        /* Won't work without CORS support */
+        //signage = new SMIL_Player('http://promo.evotion.com/sd/index.smil');
+
+        /* Won't work if page is launched via file:/// */
+        signage = new SMIL_Player('test.smil');
+        signage.play();
+    };
+    
+    </script>
+</head>
+<body>
+</body>
+</html>
