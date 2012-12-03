@@ -7,8 +7,8 @@ The player will transform the SMIL to HTML5 elements in the body of the page.
 
 Known limitations at this time:
 - since it uses XMLHttpRequest to get the SMIL file, it has the same restrictions
-- - cannot launch using file:/// protocol
-- - if requesting the SMIL from another domain, must follow CORS
+    - cannot launch using file:/// protocol
+    - if requesting the SMIL from another domain, must follow CORS
 - exclusive (programable) playlist is not supported yet
 - packaged widgets are not supported yet, but are if they are unzipped
 - wallclock and various begin/end times and events are not yet implemented
