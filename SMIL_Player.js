@@ -50,7 +50,7 @@ function SMIL_Player(src)
 
     function _getSMIL(url)
     {
-        base = _dirname(url) + '/';
+        base = (url.indexOf('/') == -1) ? '' : _dirname(url) + '/';
 
         var xhr = new XMLHttpRequest();
         var ret = false;
