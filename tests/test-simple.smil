@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- 
+
+// rendr.me "promo channel"
+// last update Thu, 15 Nov 2012 07:47:47 CET
+
+-->
+<smil>
+      <head>
+      <meta http-equiv="Refresh" content="900"/>
+            <layout>
+                  <root-layout width="800" height="480"/>
+            </layout>
+      </head>
+      <body>
+          <seq repeatCount="indefinite">
+                <video src="iadea_promo1_sd.mp4"/>
+                <video src="evotion_intro_sd.mp4"/>
+                <video src="news_sd.mp4"/>
+                <video src="evotion_how_sd.mp4"/>
+                <video src="weather_sd.mp4"/>
+                <video src="iadea_promo2_sd.mp4"/>
+                <video src="evotion_extro_sd.mp4"/>
+          </seq>
+      </body>
+</smil>
+<!-- end of playlist -->
